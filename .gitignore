@@ -179,3 +179,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Store Data File  ###
+*.zip
+*.csv

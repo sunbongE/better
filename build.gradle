@@ -26,14 +26,23 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	// web, Security, OAuth2
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
+//	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10
+	implementation("com.oracle.database.jdbc:ojdbc10:19.21.0.0")
 
 	// JWT
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
 	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+	// pdf
+	implementation 'com.itextpdf:itext7-core:7.2.5'
+	implementation 'com.itextpdf:kernel:7.2.5'
+	implementation 'com.itextpdf:layout:7.2.5'
+	implementation 'com.itextpdf:io:7.2.5'
 
 	// Lombok
 	compileOnly 'org.projectlombok:lombok'
